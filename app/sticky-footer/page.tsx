@@ -2,12 +2,10 @@
 import Lenis from "lenis";
 import React, { useEffect } from "react";
 
-import Footer from "./footer";
 import Footer1 from "./footer1";
-import Footer2 from "./footer.2";
 import Intro from "./intro";
 
-const page = () => {
+const StickyFooter = () => {
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -22,9 +20,9 @@ const page = () => {
   return (
     <main>
       <Intro />
-      <Footer2 />
+      <Footer1 />
     </main>
   );
 };
 
-export default page;
+export default StickyFooter;

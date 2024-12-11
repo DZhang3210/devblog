@@ -20,6 +20,7 @@ export default function Home() {
       <div className="mb-10">
         <h2 className="text-2xl font-bold">Frontend Work</h2>
         <div className="flex flex-col">
+          <Link href="/sticky-footer">Sticky Footer</Link>
           <Link href="/text-parallax">Text Parallax</Link>
           <Link href="https://workvibe.netlify.app/">WorkVibe</Link>
           <Link href="https://unsplash-replica1.netlify.app/">Unsplash</Link>

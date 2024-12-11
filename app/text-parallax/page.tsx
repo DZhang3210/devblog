@@ -2,7 +2,7 @@
 import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
 import Lenis from "lenis";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 
 const Slide = (props: {
   src: string;
@@ -10,7 +10,10 @@ const Slide = (props: {
   progress: MotionValue<number>;
   direction: "left" | "right";
 }) => {
-  const direction = 10 * (props.direction == "left" ? -1 : 1);
+  const direction = useMemo(
+    () => (props.direction == "left" ? -1 : 1),
+    [props.direction]
+  );
   const translateX = useTransform(
     props.progress,
     [0, 1],
@@ -19,7 +22,7 @@ const Slide = (props: {
   return (
     <motion.div
       style={{ left: props.left, x: translateX }}
-      className="relative flex whitespace-nowrap"
+      className=" relative flex whitespace-nowrap"
     >
       <Phrase src={props.src} />
       <Phrase src={props.src} />
@@ -35,6 +38,7 @@ const Phrase = ({ src }: { src: string }) => {
       <span className="relative h-[7.5vw] aspect-[4/2] rounded-full overflow-hidden">
         <Image src={src} style={{ objectFit: "cover" }} alt="image" fill />
       </span>
+      <span>Hello</span>
     </div>
   );
 };

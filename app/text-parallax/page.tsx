@@ -55,7 +55,7 @@ export default function Home() {
   });
   return (
     <main className="overflow-hidden">
-      <div className="h-[100vh]" />
+      <div className="h-[80vh]" />
       <div ref={container}>
         <Slide
           direction="left"
@@ -76,7 +76,7 @@ export default function Home() {
           progress={scrollYProgress}
         />
       </div>
-      <div className="h-[100vh]" />
+      <div className="h-[80vh]" />
     </main>
   );
 }

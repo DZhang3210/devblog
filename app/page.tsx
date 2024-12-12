@@ -20,6 +20,9 @@ export default function Home() {
       <div className="mb-10">
         <h2 className="text-2xl font-bold">Frontend Work</h2>
         <div className="flex flex-col">
+          <Link href="/perspective-section-transition">
+            Perspective Section Transition
+          </Link>
           <Link href="/sticky-footer">Sticky Footer</Link>
           <Link href="/text-parallax">Text Parallax</Link>
           <Link href="https://workvibe.netlify.app/">WorkVibe</Link>

@@ -3,7 +3,7 @@ import Lenis from "lenis";
 import React, { useEffect } from "react";
 
 import Footer1 from "./footer1";
-import Footer2 from "./footer2";
+// import Footer2 from "./footer2";
 import Intro from "./intro";
 const StickyFooter = () => {
   useEffect(() => {

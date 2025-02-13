@@ -52,6 +52,7 @@ export default function Home() {
     }
     requestAnimationFrame(raf);
   }, []);
+
   const container = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: container,

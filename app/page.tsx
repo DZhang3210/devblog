@@ -20,6 +20,7 @@ export default function Home() {
       <div className="mb-10">
         <h2 className="text-2xl font-bold">Frontend Work</h2>
         <div className="flex flex-col">
+          <Link href="/zoom-parallax">Zoom Parallax</Link>
           <Link href="/text-along-path">Text Along Path</Link>
           <Link href="/perspective-section-transition">
             Perspective Section Transition
